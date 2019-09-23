@@ -139,7 +139,7 @@ body {
 .article-content {
 	margin: 0;
 	font-size: 14px;
-	/*указываем нужный размер шрифта*/
+	
 }
 
 .article-content {
@@ -150,20 +150,33 @@ body {
 	line-height: 24px;
 
 }
+button {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	width: 160px;
+	height: 60px;
+	background-color: #fff;
+	border: 1px solid black;
+	color: #666666;
+	font-family: 'Playfair Display';
+	font-size: 20px;
+}
 
-.load {
+
+/*.load {
 	display: block;
 	font-size: 20px;
 	line-height: 20px;
 	border: 1px solid #000000;
 	margin: 0 auto;
 	color: #626262;
-	/* cursor: pointer; */
+
 	padding: 20px;
 	text-decoration: none;
 	width: 162px;
-}
+}) */
 
 a:hover {
-	color: #03a9f4;
-}
+	color: #03a9f4; 
+} 
