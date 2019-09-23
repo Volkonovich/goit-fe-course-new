@@ -1,0 +1,169 @@
+font-family: 'Roboto',
+sans-serif;
+font-family: 'Ubuntu',
+sans-serif;
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Meried Pro", "Playfair Display", "Ubuntu"serif;
+	font-weight: 420;
+	color: #626262;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+/* navigation-site */
+.wrapper {
+	width: 900px;
+	margin: 0 auto;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.site-navigation {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 100px;
+	text-align: center;
+
+}
+
+.site-navigation li:last-child {
+	margin-right: 0;
+}
+
+
+.site-navigation-item {
+	display: inline-block;
+}
+
+.site-navigation a {
+	display: block;
+	color: #626262;
+	padding: 28px 28px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden !important;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+	background-color: #ffffff;
+	color: #03a9f4;
+}
+
+.container {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.content-list {
+	list-style: none;
+	font-size: 0;
+	padding: 0;
+}
+
+.content-item {
+	display: inline-block;
+	width: 420px;
+}
+
+.content-item:not(:nth-child(2n)) {
+	margin-right: 60px;
+}
+
+.content-item:nth-child(-n + 6) {
+	margin-bottom: 60px;
+}
+
+.section-image {
+	margin-bottom: 32px;
+
+}
+
+
+
+.article-text {
+	margin: 0;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+.article-text {
+	font-family: 'Ubuntu', sans-serif;
+	color: #b4ad9e;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+
+.article-title {
+	margin: 0;
+	/*убираем маржины, которые есть по умолчанию*/
+	margin-bottom: 40px;
+	/*указываем необходимый отступ*/
+	font-size: 30px;
+	/*указываем нужный размер шрифта*/
+}
+
+.article-title {
+	font-family: 'Myriad';
+	color: #626262;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+}
+
+.article-content {
+	margin: 0;
+	font-size: 14px;
+	/*указываем нужный размер шрифта*/
+}
+
+.article-content {
+	font-family: 'PlDisplayayfair';
+	color: #626262;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 24px;
+
+}
+
+.load {
+	display: block;
+	font-size: 20px;
+	line-height: 20px;
+	border: 1px solid #000000;
+	margin: 0 auto;
+	color: #626262;
+	/* cursor: pointer; */
+	padding: 20px;
+	text-decoration: none;
+	width: 162px;
+}
+
+a:hover {
+	color: #03a9f4;
+}
