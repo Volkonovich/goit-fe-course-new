@@ -32,6 +32,8 @@ body {
 .site-navigation {
 	margin: 0;
 	padding: 0;
+	/* тут  внес изминения */
+	font-size: 0; 
 	padding-bottom: 100px;
 	text-align: center;
 
@@ -86,25 +88,28 @@ body {
 .content-item {
 	display: inline-block;
 	width: 420px;
+	/* fix */
+	padding-bottom: 90px;
 }
 
 .content-item:not(:nth-child(2n)) {
 	margin-right: 60px;
 }
 
-.content-item:nth-child(-n + 6) {
+/* .content-item:nth-child(-n + 6) {
 	margin-bottom: 60px;
-}
+} */
 
 .section-image {
 	margin-bottom: 32px;
 
 }
 
-
-
 .article-text {
 	margin: 0;
+}
+.article-text {
+	margin: 0 auto;
 	margin-bottom: 30px;
 	font-size: 20px;
 }
@@ -150,7 +155,8 @@ body {
 	line-height: 24px;
 
 }
-button {
+
+.load {
 	display: block;
 	margin: 0 auto;
 	padding: 0;
@@ -161,10 +167,11 @@ button {
 	color: #666666;
 	font-family: 'Playfair Display';
 	font-size: 20px;
+	text-decoration: none;
 }
 
 
-/*.load {
+/* .load {
 	display: block;
 	font-size: 20px;
 	line-height: 20px;
@@ -175,8 +182,10 @@ button {
 	padding: 20px;
 	text-decoration: none;
 	width: 162px;
-}) */
+} */
 
-a:hover {
+.load:hover {
+	cursor: pointer;
 	color: #03a9f4; 
+	/* background-color: red; */
 } 
