@@ -39,7 +39,7 @@ body {
 
 }
 
-.site-navigation li:last-child {
+.site-navigation li:last-child (4n) {
 	margin-right: 0;
 }
 
