@@ -1,8 +1,7 @@
-
-
 html {
 	box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -27,7 +26,8 @@ img {
 	min-width: 100%;
 	height: auto;
 }
-.clearfix:after{
+
+.clearfix:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -48,7 +48,7 @@ img {
 
 /* <h1 class="logo">Mart</h1> */
 .logo {
-	float:left;
+	float: left;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -60,7 +60,8 @@ img {
 	color: #666666;
 	font-weight: 300;
 }
-.logo:first-letter{
+
+.logo:first-letter {
 	color: #33cc99;
 	font-weight: 900;
 }
@@ -73,23 +74,24 @@ img {
 	float: right;
 	display: block;
 	list-style-type: none;
-	
-	
+
+
 }
 
 /* <li class="element-list"><a href="#" class="text">home</a></li> */
-.element-list{
+.element-list {
 	float: left;
 	padding-top: 8px;
-	padding-bottom:5px;
-	
+	padding-bottom: 5px;
+
 }
 
 /* у елеменна номер 6 забрать марджин */
-.element-list:not(:nth-child(6)){
-	margin-right: 30px;}
+.element-list:not(:nth-child(6)) {
+	margin-right: 30px;
+}
 
-.element-list a{
+.element-list a {
 	flist-style-type: none;
 	text-decoration: none;
 	color: #000;
@@ -99,6 +101,7 @@ img {
 	font-size: 14px;
 	/* line-height: 11px; */
 }
+
 .element-list a:hover,
 .element-list a:focus {
 	color: aquamarine;
@@ -107,7 +110,7 @@ img {
 /* <section class="featured"> */
 
 /* <h2 class="section-name">featured products</h2> */
-.section-name{
+.section-name {
 	text-align: center;
 	font-size: 48px;
 	color: #666666;
@@ -117,7 +120,7 @@ img {
 }
 
 /* <h2 class="section-name">featured products</h2> */
-.section-name:after{
+.section-name:after {
 	display: block;
 	content: " ";
 	border-bottom: 7px solid #33cc99;
@@ -127,7 +130,7 @@ img {
 
 
 /* <ul class="product-list clearfix"> */
-.product-list{
+.product-list {
 	margin: 0 auto;
 	padding: 0;
 }
@@ -136,19 +139,19 @@ img {
 
 /* <li class="map-list"> */
 .map-list {
-	float:left;
+	float: left;
 	margin: 0 auto;
 	padding: 0;
 	display: block;
 	width: 255px;
 	list-style-type: none;
 	margin-right: 30px;
-	
+
 
 }
 
 /* /* <li class="map-list"> 
--марджин у каждого 4-го*/ 
+-марджин у каждого 4-го*/
 .map-list:nth-of-type(4n) {
 	margin-right: 0;
 }
@@ -162,7 +165,7 @@ img {
 /* <span class="map-name">Cool lingerie</span> */
 
 .map-name {
-	float:left;
+	float: left;
 	display: block;
 	width: 201px;
 	height: 40px;
@@ -178,23 +181,24 @@ img {
 /* <a class="map-name" href="#">Blue Tshirt</a> */
 .map-list:hover a {
 	background: #33cc99;
-	 
+
 }
 
 .map-list:hover .map-price {
 	background: #7fd9c7;
-	
-	 
+
+
 }
-.map-list:hover{
--webkit-transform:scale(1.1); 
-	 -ms-transform: scale(1.1);
-	 transform: scale(1.1);
+
+.map-list:hover {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 /* <span class="map-price">$56</span> */
-.map-price{
-	float:right;
+.map-price {
+	float: right;
 	display: block;
 	width: 54px;
 	height: 40px;
@@ -205,7 +209,8 @@ img {
 	text-transform: uppercase;
 	padding: 5px 0 5px 10px;
 }
- /* нижний отступ секции */
+
+/* нижний отступ секции */
 .product-wrapper {
 	padding-bottom: 105px;
 }
@@ -213,7 +218,7 @@ img {
 
 
 
-.item-name{
+.item-name {
 	text-align: center;
 	font-size: 48px;
 	color: #666666;
@@ -222,7 +227,7 @@ img {
 	font-weight: 900;
 }
 
-.item-name:after{
+.item-name:after {
 	display: block;
 	content: " ";
 	border-bottom: 7px solid #33cc99;
@@ -236,33 +241,36 @@ img {
 
 /* <ul class="item"> */
 .item {
-   margin: 0 auto;
-   padding: 0;
-   float: left;
+	margin: 0 auto;
+	padding: 0;
+	float: left;
 
 }
- /* задаем параметры */
-.item{
-	
+
+/* задаем параметры */
+.item {
+
 	width: 350px;
 	margin-right: 30px;
 	text-decoration: none;
 	list-style: none;
 }
- /* убрать отступы у последнего */
-.item:nth-child(3n+1){
+
+/* убрать отступы у последнего */
+.item:nth-child(3n+1) {
 	margin-right: 0;
 }
 
 /* <p class="first"> */
-.first{
+.first {
 	font-size: 18px;
 	line-height: 26px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	color: #666;
 }
-.first::after{
+
+.first::after {
 	display: block;
 	content: "";
 	border-bottom: 3px solid #33cc99;
@@ -270,6 +278,7 @@ img {
 	margin-top: 10px;
 	margin-bottom: 30px;
 }
+
 /* <p class="texp-after" */
 .texp-after {
 	margin: 0 auto;
@@ -281,6 +290,7 @@ img {
 	color: #666;
 	padding-bottom: 19px;
 }
+
 /* <button class="load" onclick="return false">Read more</button> */
 .load {
 	margin: 0 auto;
@@ -296,18 +306,18 @@ img {
 	color: #fff;
 	font-weight: 300;
 }
-.load:hover{
-	-webkit-transform:scale(1.1); 
-		 -ms-transform: scale(1.1);
-		 transform: scale(1.1);
-	}
+
+.load:hover {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
 
 .latest {
 	padding-bottom: 81px;
 }
 
 
- 
 
 
 
@@ -320,13 +330,14 @@ img {
 
 
 
-  
 
 
 
 
 
-	  
+
+
+
 
 
 
@@ -339,24 +350,3 @@ img {
 .mein-menu a:focus {
 	color: aquamarine;
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-  
-  
-
