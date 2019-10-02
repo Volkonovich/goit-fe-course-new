@@ -9,8 +9,6 @@ html {
 }
 
 body {
-	margin: 0 auto;
-	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 
@@ -42,7 +40,7 @@ img {
 }
 
 /* <section class="head clearfix"> */
-.head {
+.navigation {
 	margin-top: 20px;
 }
 
@@ -53,12 +51,13 @@ img {
 	padding: 0;
 }
 
-.logo {
+.logo a {
 	font-size: 30px;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
 	color: #666666;
 	font-weight: 300;
+	text-decoration: none;
 }
 
 .logo:first-letter {
@@ -92,6 +91,7 @@ img {
 }
 
 .element-list a {
+	display: block;  /*  исправил тут*/
 	flist-style-type: none;
 	text-decoration: none;
 	color: #000;
@@ -111,12 +111,14 @@ img {
 
 /* <h2 class="section-name">featured products</h2> */
 .section-name {
+	margin: 0 auto;
 	text-align: center;
 	font-size: 48px;
 	color: #666666;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 900;
+	margin-top:100px;
 }
 
 /* <h2 class="section-name">featured products</h2> */
@@ -166,6 +168,7 @@ img {
 
 .map-name {
 	float: left;
+	margin: 0 auto;
 	display: block;
 	width: 201px;
 	height: 40px;
@@ -179,7 +182,7 @@ img {
 }
 
 /* <a class="map-name" href="#">Blue Tshirt</a> */
-.map-list:hover a {
+.map-list:hover p {
 	background: #33cc99;
 
 }
@@ -199,6 +202,7 @@ img {
 /* <span class="map-price">$56</span> */
 .map-price {
 	float: right;
+	margin: 0 auto;
 	display: block;
 	width: 54px;
 	height: 40px;
@@ -243,32 +247,38 @@ img {
 .item {
 	margin: 0 auto;
 	padding: 0;
-	float: left;
 
 }
 
 /* задаем параметры */
-.item {
-
+/*<li class="item-list"> */
+.item-list {
+	float: left;
 	width: 350px;
 	margin-right: 30px;
 	text-decoration: none;
 	list-style: none;
+	margin-bottom:40px;
 }
 
 /* убрать отступы у последнего */
-.item:nth-child(3n+1) {
+.item-list:nth-child(1n+3) {
 	margin-right: 0;
 }
 
 /* <p class="first"> */
 .first {
+	margin: 0 auto;
 	font-size: 18px;
 	line-height: 26px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	color: #666;
 }
+.item-list img{
+    margin-bottom: 15px;
+}
+
 
 .first::after {
 	display: block;
@@ -288,14 +298,17 @@ img {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	color: #666;
-	padding-bottom: 19px;
+	margin-bottom: 19px;
 }
 
 /* <button class="load" onclick="return false">Read more</button> */
 .load {
-	margin: 0 auto;
+	display: inline-block;
+	/* margin: 0 auto; */
 	padding-top: 13px;
 	padding-bottom: 14px;
+	text-decoration: none;
+	text-align: center;
 	width: 160px;
 	height: 50px;
 	border-radius: 4px;
