@@ -37,12 +37,12 @@ input[type="radio"].visually-hidden {
 }
 
 /* start header */
-.wrapper {
+.container {
   width: 1200px;
   margin: 0 auto;
 }
 
-.peg {
+.pege {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,14 +51,14 @@ input[type="radio"].visually-hidden {
   margin-top: 30px;
 }
 
-.peg-list {
+.pege-list {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.peg-list a {
+.pege-list a {
   font-size: 14px;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
@@ -97,7 +97,7 @@ input[type="radio"].visually-hidden {
   color: #f38181;
 }
 
-.element-menu. {
+.element-menu {
   text-decoration: none;
 }
 
@@ -166,14 +166,12 @@ input[type="radio"].visually-hidden {
 /* <h4 class="amazing-text">photography</h4> */
 .amazing-text {
   margin: 0;
-  /* margin-right: 25px; */
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   color: #333333;
   width: 260px;
-  /* text-transform: uppercase;  */
 }
 
 .amazing-paragrag {
@@ -191,7 +189,6 @@ input[type="radio"].visually-hidden {
 <section class="team">
 <p class="text">*/
 .amazing-list-item::before {
-  align-self: beseline;
   display: flex;
   content: '';
   height: 35px;
@@ -203,32 +200,32 @@ input[type="radio"].visually-hidden {
 }
 
 .amazing-list-item:nth-child(1) {
-  background-image: url(/icons/ALARM.png);
+  background-image: url(../icons/ALARM.png);
   background-repeat: no-repeat;
 }
 
 .amazing-list-item:nth-child(2) {
-  background-image: url(/icons/LINE\ GRAPH.png);
+  background-image: url(../icons/LINE\ GRAPH.png);
   background-repeat: no-repeat;
 }
 
 .amazing-list-item:nth-child(3) {
-  background-image: url(/icons/COMPUTER\ .png);
+  background-image: url(../icons/COMPUTER\ .png);
   background-repeat: no-repeat;
 }
 
 .amazing-list-item:nth-child(4) {
-  background-image: url(/icons/BOOK\ 2.png);
+  background-image: url(../icons/BOOK\ 2.png);
   background-repeat: no-repeat;
 }
 
 .amazing-list-item:nth-child(5) {
-  background-image: url(/icons/HOME.png);
+  background-image: url(../icons/HOME.png);
   background-repeat: no-repeat;
 }
 
 .amazing-list-item:nth-child(6) {
-  background-image: url(/icons/IMAGE.png);
+  background-image: url(../icons/IMAGE.png);
   background-repeat: no-repeat;
 }
 
@@ -339,35 +336,28 @@ input[type="radio"].visually-hidden {
 
 .icon-fb {
 
-  background-image: url(/icons/facebook.png);
+  background-image: url(../icons/facebook.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .icon-tv {
 
-  background-image: url(/icons/twitter.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-tv {
-
-  background-image: url(/icons/twitter.png);
+  background-image: url(../icons/twitter.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .icon-p {
 
-  background-image: url(/icons/pinterest.png);
+  background-image: url(../icons/pinterest.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .icon-i {
 
-  background-image: url(/icons/instagram.png);
+  background-image: url(../icons/instagram.png);
   background-repeat: no-repeat;
   background-position: center;
 }
