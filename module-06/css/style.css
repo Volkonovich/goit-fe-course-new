@@ -15,11 +15,11 @@ body {
 
 }
 
-img {
+/* img {
   display: block;
   min-width: 100%;
   height: auto;
-}
+} */
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
