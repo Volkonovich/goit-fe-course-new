@@ -14,17 +14,6 @@ body {
 	font-size: 14px;
 }
 
-/*img 
--убираем зазоры вверху и внизу:
-	 -не даем картинке тянутся 
-	 -даем высоту авто для поодержки 
-	 старых браузеров*/
-img {
-	display: block;
-	min-width: 100%;
-	height: auto;
-}
-
 .clearfix:after {
 	content: "";
 	display: table;
@@ -56,43 +45,16 @@ input[type="radio"].visually-hidden {
 	padding: 32px 0;
 }
 
-.navigation {
-
-	/* width: 1110px;  */
-}
-
 .logo a{
 	float: left;
 	margin: 0 auto;
 	padding: 0;
 	background-color: #fff;
-	background-image: url(/icons/mart.png);
 	background-repeat: no-repeat;
-	
 	height: 21px;
 	width:77px;
 }
 
-.logo a{
-	height: 21px;
-	width:77px;
-}
-
-/* .logo a {
-	font-size: 14px;
-	text-transform: uppercase;
-	font-family: 'Montserrat Regular', sans-serif;
-	color: #666666;
-	font-weight: 300;
-	text-decoration: none;
-} */
-
-/* .logo:first-letter {
-	color: #33cc99;
-	font-weight: 900;
-} */
-
-/* <ul class="menu"> */
 .menu {
 	margin: 0 auto;
 	padding: 0;
@@ -115,7 +77,6 @@ input[type="radio"].visually-hidden {
 
 .element-list a {
 	display: block;
-	/* flist-style-type: none; */
 	text-decoration: none;
 	color: #000;
 	text-transform: uppercase;
@@ -126,24 +87,28 @@ input[type="radio"].visually-hidden {
 
 .element-list a:hover,
 .element-list a:focus {
-	color: aquamarine;
+	color:#1abc9c;
 }
 
 .slider {
 	width: 100%;
-	height: 600px;
+	/* position: relative; */
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-image:  url(../img/picture.jpg); height: 600px;
+	margin: 0 auto;
+	font-family: “Roboto”, sans-serif;
+	color: #ffffff;
+
+	
+}
+.slider:hover {
 	background-image: linear-gradient(rgba(0, 0, 0, .52), rgba(0, 0, 0, .52)), url(../img/picture.jpg);
 }
 
-.slider-wrapper {
+.container_slider {
 	position: relative;
 	height: 600px;
-}
-
-.btn-c {
-	width: 1110px;
 }
 
 .btn {
@@ -185,8 +150,9 @@ input[type="radio"].visually-hidden {
 	margin: 0 auto;
 	width: 760px;
 	position: absolute;
-	top: 220px;
-	left: 200px;
+	left: 50%;
+ 	top: 35%;
+ 	transform: translateX(-50%);
 	letter-spacing: -0.6px;
 }
 
@@ -210,13 +176,6 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 }
 
-/* <section class="new"> */
-.new {
-	margin: 0 auto;
-	padding: 0;
-	background-color: #e9f0fd;
-}
-
 .name-section {
 	margin: 0 auto;
 	text-align: center;
@@ -237,7 +196,6 @@ input[type="radio"].visually-hidden {
 }
 
 .card {
-	width: 1110px;
 	padding-bottom: 100px;
 }
 
@@ -247,6 +205,9 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 }
 
+.map-box{
+background-color: #323232;
+}
 /* <li class="map-list"> */
 .map-list {
 	float: left;
@@ -268,13 +229,14 @@ input[type="radio"].visually-hidden {
 	margin: 0 auto;
 	display: block;
 	width: 201px;
-	height: 40px;
 	background-color: #323232;
+	font-family: 'Roboto', sans-serif;
 	color: #fff;
 	font-size: 18px;
 	line-height: 32px;
+	font-weight: 900;
 	text-transform: uppercase;
-	padding: 5px 0 5px 10px;
+	padding: 5px 0 3px 10px;
 	text-decoration: none;
 }
 
@@ -300,25 +262,39 @@ input[type="radio"].visually-hidden {
 	display: block;
 	width: 54px;
 	height: 40px;
-	background-color: #8c8c8c;
+	background: rgba(255, 255, 255,45%);
+	font-family: 'Roboto', sans-serif;
 	color: #fff;
 	font-size: 18px;
 	line-height: 32px;
+	font-weight: 900;
 	text-transform: uppercase;
 	padding: 5px 0 5px 10px;
 }
 
+
+.box-img{
+	position: relative;
+}
+
+.box-img-wrapper{
+	position: relative;
+}
+
 .product-overlay {
 	position: absolute;
-	top: 10px;
-	left: 10px;
-	bottom: 10px;
-	right: 10px;
-	background: #0000007f;
-	text-align: center;
-	bottom: 0;
-	height: 304px;
-	display: none;
+    top: 0;
+    left: 0;
+    bottom: 10px;
+    right: 10px;
+    background: #0000007f;
+    text-align: center;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border: 10px solid rgba(256,256,256.5);
+    background-clip: padding-box;
+    display: none;
 }
 
 .map-list:hover .product-overlay {
@@ -326,9 +302,12 @@ input[type="radio"].visually-hidden {
 }
 
 .submenu {
+	display: block;
 	list-style-type: none;
 	width: 100%;
-	margin-top: 80px;
+	top: 50%;
+	transform: translateY(50%);
+	vertical-align: center;
 	padding: 0;
 }
 
