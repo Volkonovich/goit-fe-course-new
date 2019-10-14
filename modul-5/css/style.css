@@ -49,7 +49,7 @@ input[type="radio"].visually-hidden {
 	float: left;
 	margin: 0 auto;
 	padding: 0;
-	background-color: #fff;
+	/* background-color: #fff; */
 	background-repeat: no-repeat;
 	height: 21px;
 	width:77px;
