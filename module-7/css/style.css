@@ -245,14 +245,31 @@ width: 480px;
   background-color: #222222;
   padding: 100px 0 118px;
 }
-.contact_form>.sub-title {
-  margin-bottom: 74px;
+.sub-title {
+margin:0 auto;
+text-align: center;
+display: block;
+font-size: 16px;
+line-height: 19px;
+font-weight: 400;
+font-family: "DroidSerif";
+text-transform: none;
+text-align: center;
+color: #777777;
+padding-bottom:80px;
 }
 .services_section {
   padding: 80px 0 118px;
 }
 .form_title {
+  text-align: center;
+  margin:0 auto;
   color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+  font-size:40px;
+  line-height:48px;
+  text-transform: uppercase;
 }
 input {
   color: #bbbbbb;
@@ -261,9 +278,10 @@ input {
   width: 456px;
   box-sizing: border-box;
   font-family: Montserrat, sans-serif;
-  font-weight: 700;
+  font-weight: 900;
+  text-transform: uppercase;
 }
-input::placeholder {
+.input::placeholder {
   text-transform: uppercase;
   color: #bbbbbb;
   font-family: Montserrat, sans-serif;
@@ -277,10 +295,19 @@ textarea::placeholder {
   font-weight: 700;
   font-size: 14px;
 }
-input:required:invalid:not(:placeholder-shown) { outline: 2px solid red;}
-input:required:valid:not(:placeholder-shown) { outline: 2px solid green;}
-textarea:required:invalid:not(:placeholder-shown) { outline: 2px solid red;}
-textarea:required:valid:not(:placeholder-shown) { outline: 2px solid green;}
+input:required:invalid:not(:placeholder-shown) { 
+  outline: 2px solid red;
+}
+input:required:valid:not(:placeholder-shown) {
+   outline: 2px solid green;
+  }
+textarea:required:invalid:not(:placeholder-shown) {
+   outline: 2px solid red;
+  }
+textarea:required:valid:not(:placeholder-shown) { 
+  outline: 2px solid green;
+}
+
 .input_section {
   display: flex;
   justify-content: space-between;
