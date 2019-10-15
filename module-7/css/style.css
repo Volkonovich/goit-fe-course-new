@@ -215,13 +215,13 @@ width: 480px;
   position: relative;
 }
 .icons-trash::before {
-  background-image: url(/icons/trash.png)
+  background-image: url(../img/icons/trash.png)
 }
 .icon-pc::before {
-  background-image: url(/icons/pc.png)
+  background-image: url(../img/icons/pc.png)
 }
 .icon-secur::before {
-  background-image: url(/icons/secur.png)
+  background-image: url(../img/icons/secur.png)
 }
 .section-content-list::before {
   content: '';
