@@ -103,21 +103,6 @@ input[type="radio"].visually-hidden {
 	
 }
 
-/* .slider::before{
-	display: block;
-	content: ‘’;
-	position: absolute;
-	width: 100%;
-	height: 600px;
-	/* top: 0;
-	left: 0;
-	background-color:rgba(0, 0, 0, 0.52);	
-}  */
-
-
-/* .slider:hover {
-	background-image: linear-gradient(rgba(0, 0, 0, .52), rgba(0, 0, 0, .52)), url(../img/picture.jpg);
-} */
 
 .container_slider {
 	position: relative;
@@ -225,6 +210,11 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 }
 
+.for-img{
+display: block;
+margin: 0;
+height: 100%;
+}
 .map-box{
 background-color: #323232;
 }
@@ -256,7 +246,7 @@ background-color: #323232;
 	line-height: 32px;
 	font-weight: 900;
 	text-transform: uppercase;
-	padding: 5px 0 3px 10px;
+	padding: 5px 0 4px 10px;
 	text-decoration: none;
 }
 
@@ -295,10 +285,14 @@ background-color: #323232;
 
 .box-img{
 	position: relative;
+	
+
 }
 
 .box-img-wrapper{
 	position: relative;
+	display: block;
+	margin: 0 auto;
 }
 
 .product-overlay {
