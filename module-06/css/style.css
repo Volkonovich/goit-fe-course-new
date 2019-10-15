@@ -176,8 +176,8 @@ input[type="radio"].visually-hidden {
 
 .amazing-paragrag {
   margin-right: 25px;
+  line-height: 24px;
   margin: 0;
-  margin-top: 20px;
   padding-top: 23px;
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
@@ -293,18 +293,24 @@ input[type="radio"].visually-hidden {
 
 .wrapper-img-team {
   position: relative;
+  width: 380px;
+  height: 470px;
+
 }
 
 .overlay {
   display: flex;
   position: absolute;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: row-reverse;
   top: 0;
   left: 0;
-  width: 380px;
-  height: 470px;
+  width: 100%;
+  height: 100%;
   opacity: 0;
+  background-image: linear-gradient(10deg,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%);
 }
 
 .overlay-list {
@@ -373,15 +379,22 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
+.wrapper-img-team:hover {
+  transform: translate(-3px, -3px);
+  transition-duration: 200ms;
+}
+
 /* Footer */
 
 .information {
   margin: 0;
   width: 300px;
 }
-.text-link{
+
+.text-link {
   text-decoration: none;
 }
+
 .information a {
   color: #f38181;
 }
