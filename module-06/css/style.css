@@ -380,7 +380,7 @@ input[type="radio"].visually-hidden {
 }
 
 .wrapper-img-team:hover {
-  transform: translate(-3px, -3px);
+  transform: translate(-10px, -10px);
   transition-duration: 200ms;
 }
 
