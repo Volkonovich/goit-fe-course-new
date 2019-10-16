@@ -291,10 +291,9 @@ input[type="radio"].visually-hidden {
 
 }
 
-.wrapper-img-team {
+.wrapper-img-team{
   position: relative;
   width: 380px;
-  height: 470px;
 
 }
 
@@ -373,15 +372,20 @@ input[type="radio"].visually-hidden {
 
 }
 
-.overlay:hover {
+.overlay {
   background-image: linear-gradient(rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%);
   box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
-  opacity: 1;
+
 }
 
-.wrapper-img-team:hover {
+.wrapper-img-team:hover .overlay {
   transform: translate(-10px, -10px);
-  transition-duration: 200ms;
+  transition: all 200ms linear;
+  opacity: 1;
+}
+.wrapper-img-team:hover img {
+  transform: translate(-10px, -10px);
+  transition: all 200ms linear;
 }
 
 /* Footer */
@@ -427,11 +431,14 @@ input[type="radio"].visually-hidden {
   font-size: 15px;
   font-weight: 300;
   font-style: italic;
-  color: #e7e7e7;
+  color: #000000;
   border: 1px solid #e7e7e7;
   border-right: none;
   text-transform: capitalize;
   padding-left: 10px;
+}
+input::placeholder{
+  color: #cccccc;
 }
 
 .subscribe-button {
