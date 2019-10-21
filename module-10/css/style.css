@@ -45,6 +45,8 @@ input[type="radio"].visually-hidden {
 .main-head{
   
   background-image: linear-gradient( 0deg, rgba(252,227,138,.9) 0%, rgba(243,129,129,.9) 100%), url(../img/Layer\ 15.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -65,8 +67,8 @@ input[type="radio"].visually-hidden {
 
 .pege-list a {
   font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
   color: #666666;
   font-weight: 700;
   text-decoration: none;
@@ -196,7 +198,7 @@ input[type="radio"].visually-hidden {
 
 }
 
-.work {
+.befor-name {
   margin: 0 auto;
   padding: 0;
   margin-top: 100px;
@@ -205,9 +207,10 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #555252;
   text-align: center;
+  margin-bottom: 90px;
 }
 
-.work__section-name {
+.befor-name__section-name {
   display: block;
   margin: 0 auto;
   padding-top: 30px;
@@ -314,7 +317,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 85px;
 }
 
-.work_text {
+.befor-name__text {
   margin: 0 auto;
   font-size: 15px;
   line-height: 24px;
@@ -351,7 +354,7 @@ input[type="radio"].visually-hidden {
   color: #333333;
 }
 
-.work_text-team {
+.befor-name__text-team {
   padding-top: 31px;
   justify-content: center;
 
@@ -447,7 +450,7 @@ input[type="radio"].visually-hidden {
   width: 300px;
 }
 
-.work_text-link {
+.befor-name__textt-link {
   text-decoration: none;
 }
 
@@ -511,6 +514,8 @@ input::placeholder{
   (-o-min-device-pixel-ratio: 2/1),
   (min-resolution: 192dpi) {
       .header {
-        background-image: linear-gradient( 0deg, rgba(252,227,138,.9) 0%, rgba(243,129,129,.9) 100%), url(../img/Layer\ 15@2x.jpg);
+        background-image: linear-gradient( 0deg, rgba(252,227,138,.9) 0%, rgba(243,129,129,.9) 100%), url(../img/Layer\15@2x.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
       }
   }
