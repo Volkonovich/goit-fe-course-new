@@ -2,3 +2,14 @@
    Import partials below
 */
 @import './normalize';
+
+
+@import './sections/base';
+@import './sections/fonts';
+@import './helper/variables';
+
+// SECTIONS
+@import './sections/header';
+@import './sections/services';
+@import './sections/team';
+@import './sections/footer';

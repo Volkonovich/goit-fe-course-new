@@ -1,0 +1,140 @@
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.team-list-item {
+  width: 380px;
+  padding-bottom: 85px;
+}
+
+.befor-name__text {
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: $font-roboto;
+  font-weight: 400;
+  color: $silver-lite-2;
+  margin-bottom: 90px;
+  width: 960px;
+  text-align: center;
+}
+
+.text-team__first {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: $font-mont;
+  font-weight: 400;
+  color: $silver-lite;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.text-team__second {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: $font-roboto;
+  font-style: italic;
+  font-weight: 300;
+  color: $silver-lite-2;
+}
+
+.befor-name__text-team {
+  padding-top: 31px;
+  justify-content: center;
+
+}
+
+.wrapper-img-team {
+  position: relative;
+  width: 380px;
+
+}
+
+.overlay {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  flex-direction: row-reverse;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-image: linear-gradient(10deg,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%);
+}
+
+.overlay-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.overlay-list-item {
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-color: $yellow-color;
+  background-repeat: no-repeat;
+}
+
+.overlay-list-item a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.overlay-list-item:not(:last-child) {
+  margin-right: 2px;
+}
+
+.overlay-list__svg {
+  fill: $pinc-color;
+  width: 26px;
+  height: 22px;
+
+}
+
+.overlay-list-item:hover .overlay-list__svg {
+  fill: $white-color;
+}
+
+.overlay-list-item:hover {
+  background-color: $pinc-color;
+
+}
+
+.overlay {
+  background-image: linear-gradient(rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%);
+  box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
+
+}
+
+.wrapper-img-team:hover .overlay {
+  transform: translate(-10px, -10px);
+  transition: all 200ms linear;
+  opacity: 1;
+}
+
+.wrapper-img-team:hover img {
+  transform: translate(-10px, -10px);
+  transition: all 200ms linear;
+}

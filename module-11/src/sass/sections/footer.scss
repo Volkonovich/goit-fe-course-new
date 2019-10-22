@@ -1,0 +1,67 @@
+/* Footer */
+
+.information {
+  margin: 0;
+  width: 300px;
+}
+
+.befor-name__textt-link {
+  text-decoration: none;
+}
+
+.information a {
+  color: $silver-befot;
+}
+
+.information::before {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: block;
+  width: 1200px;
+  height: 1px;
+  background-color: $white-inform;
+  content: ''
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.subscribe {
+  display: flex;
+  margin-top: 10px;
+}
+
+.subscribe-mail {
+  width: 240px;
+  height: 40px;
+  font-family: “Roboto”, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  color: $black-color;
+  border: 1px solid wh-color;
+  border-right: none;
+  text-transform: capitalize;
+  padding-left: 10px;
+}
+
+input::placeholder {
+  color: $placeholder-color;
+}
+
+.subscribe-button {
+  margin: 0 auto;
+  padding: 0;
+  text-transform: uppercase;
+  color: $white-color;
+  background: $subs-botton;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  height: 40px;
+  width: 150px;
+  cursor: pointer;
+}
