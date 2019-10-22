@@ -104,10 +104,6 @@ ul, ol {
   font-size: 1.25rem;
   text-transform: uppercase;
   overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid rgba(0, 0, 0, .87);
-  animation: animIntro 3.5s steps(23 ,end),
-             animBar 1s step-end infinite;
   margin-bottom: 30px;
 }
 
